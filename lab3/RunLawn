@@ -1,0 +1,11 @@
+#RunLawn
+#Jongwoo Park
+#jpark510
+#lab3
+#a program that compiles and runs Lawn.java and records error and output
+echo "compiling Lawn.java"
+javac Lawn.java >& Lawn-errs
+echo "running Lawn.class"
+java Lawn < Lawn-in > Lawn-out
+echo "deleting Lawn.class"
+rm Lawn.class

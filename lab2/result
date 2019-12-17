@@ -1,0 +1,21 @@
+/afs/cats.ucsc.edu/users/u/jpark510/cs12a/lab2
+
+Access list for public is
+Normal rights:
+  system:operator rlidwk
+  system:authuser rlid
+  system:anyuser rl
+  jpark510 rlidwka
+
+Access list for private is
+Normal rights:
+  jpark510 rlidwka
+
+total 7
+-rw-r--r--. 1 jpark510 users  427 Jan 23 22:46 HelloWorld.class
+drwxr-xr-x. 2 jpark510 users 2048 Jan 23 21:48 private
+-rwx------. 1 jpark510 users  193 Jan 23 22:47 prog
+drwxr-xr-x. 2 jpark510 users 2048 Jan 23 21:48 public
+-rw-r--r--. 1 jpark510 users  239 Jan 23 22:49 result
+
+Hello, lab 2!

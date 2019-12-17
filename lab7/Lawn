@@ -1,0 +1,25 @@
+#Lawn
+#Jongwoo Park
+#jpark510
+#lab7
+#bash script that interacts with the user to find lawn area and mowing time
+
+echo "Enter the length and width of the lot, in feet: "
+read lotLength lotWidth
+lotArea=$( echo "scale=5;$lotLength*$lotWidth" | bc )
+echo "Enter the length and width of the house, in feet: "
+read houseLength houseWidth
+houseArea=$( echo "scale=5;$houseLength*$houseWidth" | bc )
+lawnArea=$( echo "scale=5;$lotArea-$houseArea" | bc )
+echo "The lawn area is $lawnArea square feet."
+echo "Enter the mowing rate, in square feet per second: "
+read mowingRate
+sec=$( echo "scale=5;$lawnArea/$mowingRate" | bc )
+s=$( echo "if($sec%1>.5){$sec/1+1}else{$sec/1}" | bc  ) 
+m=$( echo "$s/60" | bc  )     
+s=$( echo "$s%60" | bc  )     
+h=$( echo "$m/60" | bc  )     
+m=$( echo "$m%60" | bc  )     
+echo "The mowing time is $h hours, $m minutes and $s seconds." 
+
+

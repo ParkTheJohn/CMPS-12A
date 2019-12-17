@@ -1,0 +1,11 @@
+# errors
+# Jongwoo Park
+# jpark510
+# lab6
+# errors found in LetterHome.class
+
+1. there should be a period after "sent" when input (5 2)
+2. "hot" should be "cold" when input (2 4)
+3. "last" should be "next" when input (3 3)
+4. "books" should be "book" when input (4 1)
+5. inputting a number above 5 should print "not a valid code" but prints "is a valid code"
